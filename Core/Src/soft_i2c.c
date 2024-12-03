@@ -208,7 +208,7 @@ int i2c_write_read(uint8_t i2c_address, uint8_t * write_data, uint8_t write_coun
 		// Send address with the R/W bit set to 1, which signifies a read
 		soft_i2c_write8((i2c_address << 1) | 1);
 		while(read_count) {
-			*read_data = soft_i2c_read8(false);
+			*read_data = soft_i2c_read8(read_count==1?true:false); // for last read, send NAK
 			read_data++;
 			read_count--;
 		} // while

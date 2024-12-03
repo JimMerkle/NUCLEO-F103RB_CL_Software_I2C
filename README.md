@@ -1,14 +1,16 @@
 # NUCLEO-F103RB_CL_Software_I2C
-
-		
-## Development Board - Notes
+    
+    Develop / Demonstrate a Software I2C Bus Master using GPIOs functioning
+    as Open Collector / Open Drain.
+    
+## Development Board
     
     Using STMicro NUCLEO-F103RB
 
 
 ## DS3231 - Connections
     
-    Connect DS3231 to I2C1 pins:
+    Connect DS3231 module to Soft I2C pins:
      PC0 (SCL)
      PC1 (SDA)
 		
